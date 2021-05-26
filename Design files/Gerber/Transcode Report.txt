@@ -1,0 +1,79 @@
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-B.Paste.gbp' ----   Tue Feb 23 12:13:37 2021
+
+D10   --> D100
+D12   --> D101
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-B.SilkS.gbo' ----   Tue Feb 23 12:13:37 2021
+
+D10   --> D102
+D11   --> D103
+D12   --> D104
+D13   --> D105
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-Edge.Cuts.gm1' ----   Tue Feb 23 12:13:37 2021
+
+D10   --> D106
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-F.Cu.gtl' ----   Tue Feb 23 12:13:37 2021
+
+D13   --> D107
+D14   --> D108
+D16   --> D109
+D17   --> D110
+D18   --> D111
+D19   --> D112
+D20   --> D113
+D21   --> D114
+D22   --> D115
+D23   --> D116
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-F.Paste.gtp' ----   Tue Feb 23 12:13:37 2021
+
+D12   --> D117
+D13   --> D118
+D14   --> D119
+D15   --> D120
+D16   --> D121
+D17   --> D122
+D18   --> D123
+D19   --> D124
+D20   --> D125
+D21   --> D126
+D22   --> D127
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-F.SilkS.gto' ----   Tue Feb 23 12:13:37 2021
+
+D10   --> D128
+D11   --> D129
+D12   --> D130
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-In1.Cu.g2' ----   Tue Feb 23 12:13:37 2021
+
+D14   --> D131
+D15   --> D132
+D16   --> D133
+D17   --> D134
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Custom-EEG\ADS1299 Feather Wing\Design Files\Brainwear\Gerber\ADS1299Wing-In2.Cu.g3' ----   Tue Feb 23 12:13:37 2021
+
+D14   --> D135
+D15   --> D136
+D16   --> D137
+D17   --> D138
+-----------------------------------------------------------------

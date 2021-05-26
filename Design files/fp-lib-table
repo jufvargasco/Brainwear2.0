@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ADS1299-Lib)(type KiCad)(uri ${KIPRJMOD}/ADS1299-Lib.pretty)(options "")(descr ""))
+  (lib (name MCP1754T-3302E_OT)(type KiCad)(uri "C:/Users/jpipe/Google Drive/DFKI/EEG/Custom-EEG/ADS1299 Feather Wing/Design Documentation/Component models/Schematics and footprints/MCP1754T-3302E_OT")(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri C:/Users/jpipe/OneDrive/Documents/KiCad/SamacSys_Parts.pretty)(options "")(descr ""))
+)

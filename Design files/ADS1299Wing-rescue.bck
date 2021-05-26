@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +EXT_BATT
+D Power symbol creates a global label with name "+BATT"
+K power-flag battery
+$ENDCMP
+#
+#End Doc Library

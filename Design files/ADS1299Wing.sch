@@ -1,0 +1,1976 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Brainwear"
+Date "2021-02-12"
+Rev "2.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR02
+U 1 1 5B764283
+P 6050 1100
+F 0 "#PWR02" H 6050 950 50  0001 C CNN
+F 1 "+3V3" H 6000 1250 50  0000 L CNN
+F 2 "" H 6050 1100 50  0001 C CNN
+F 3 "" H 6050 1100 50  0001 C CNN
+	1    6050 1100
+	1    0    0    -1  
+$EndComp
+Text Label 6400 3200 0    50   ~ 0
+SCLK
+Text Label 6400 3500 0    50   ~ 0
+~CS
+Text Label 6400 3600 0    50   ~ 0
+~DRDY
+Text Label 6400 3800 0    50   ~ 0
+START
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C5
+U 1 1 5B7F5A28
+P 7350 4500
+F 0 "C5" H 7442 4546 50  0000 L CNN
+F 1 "1uF" H 7442 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7350 4500 50  0001 C CNN
+F 3 "~" H 7350 4500 50  0001 C CNN
+	1    7350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C9
+U 1 1 5B7F5A8E
+P 7100 4600
+F 0 "C9" H 7192 4646 50  0000 L CNN
+F 1 "1uF" H 7192 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 4600 50  0001 C CNN
+F 3 "~" H 7100 4600 50  0001 C CNN
+	1    7100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C11
+U 1 1 5B7F5AFE
+P 6600 4700
+F 0 "C11" H 6450 4750 50  0000 L CNN
+F 1 "1uF" H 6450 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 4700 50  0001 C CNN
+F 3 "~" H 6600 4700 50  0001 C CNN
+	1    6600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C10
+U 1 1 5B7F5D4C
+P 7600 4650
+F 0 "C10" H 7692 4696 50  0000 L CNN
+F 1 "100uF" H 7692 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7600 4650 50  0001 C CNN
+F 3 "~" H 7600 4650 50  0001 C CNN
+	1    7600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C8
+U 1 1 5B7FAB00
+P 6900 4600
+F 0 "C8" H 6700 4600 50  0000 L CNN
+F 1 "100nF" H 6750 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 4600 50  0001 C CNN
+F 3 "~" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4900 7350 4900
+Wire Wire Line
+	7350 4900 7350 4600
+Wire Wire Line
+	7350 4900 7600 4900
+Wire Wire Line
+	7600 4900 7600 4750
+Connection ~ 7350 4900
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR042
+U 1 1 5B8279F2
+P 6050 5300
+F 0 "#PWR042" H 6050 5050 50  0001 C CNN
+F 1 "GND" V 6055 5172 50  0000 R CNN
+F 2 "" H 6050 5300 50  0001 C CNN
+F 3 "" H 6050 5300 50  0001 C CNN
+	1    6050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RB1
+U 1 1 5B82D870
+P 7000 2000
+F 0 "RB1" V 6804 2000 50  0000 C CNN
+F 1 "1MOhm" V 6900 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 2000 50  0001 C CNN
+F 3 "~" H 7000 2000 50  0001 C CNN
+	1    7000 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device CB1
+U 1 1 5B82DA3F
+P 6750 2000
+F 0 "CB1" V 6650 1900 50  0000 L CNN
+F 1 "1nF" V 6850 1900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6750 2000 50  0001 C CNN
+F 3 "~" H 6750 2000 50  0001 C CNN
+	1    6750 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 1900
+Wire Wire Line
+	6750 1900 7000 1900
+Wire Wire Line
+	7000 2100 6750 2100
+Connection ~ 6750 2100
+Connection ~ 6900 4500
+Wire Wire Line
+	6900 4500 7100 4500
+Wire Wire Line
+	6900 4700 7100 4700
+Wire Wire Line
+	7100 4700 7100 4900
+Connection ~ 7100 4700
+Wire Wire Line
+	6600 4800 6600 4900
+Wire Wire Line
+	6600 4900 7100 4900
+Connection ~ 7100 4900
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C6
+U 1 1 5B893BD9
+P 3900 4550
+F 0 "C6" H 3992 4596 50  0000 L CNN
+F 1 "10uF" H 3992 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3900 4550 50  0001 C CNN
+F 3 "~" H 3900 4550 50  0001 C CNN
+	1    3900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:LED_Small-Device D2
+U 1 1 5B8DF059
+P 6650 2700
+F 0 "D2" H 6650 2843 50  0000 C CNN
+F 1 "LED_Small" H 6650 2844 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 6650 2700 50  0001 C CNN
+F 3 "~" V 6650 2700 50  0001 C CNN
+	1    6650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD2
+U 1 1 5B8DF21F
+P 7000 2700
+F 0 "RD2" V 7100 2700 50  0000 C CNN
+F 1 "470" V 6900 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 2700 50  0001 C CNN
+F 3 "~" H 7000 2700 50  0001 C CNN
+	1    7000 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR023
+U 1 1 5B8E81FF
+P 7300 2700
+F 0 "#PWR023" H 7300 2550 50  0001 C CNN
+F 1 "+3V3" V 7315 2828 50  0000 L CNN
+F 2 "" H 7300 2700 50  0001 C CNN
+F 3 "" H 7300 2700 50  0001 C CNN
+	1    7300 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RGND1
+U 1 1 5B8F1724
+P 1300 7550
+F 0 "RGND1" V 1400 7550 50  0000 C CNN
+F 1 "R_Small" V 1405 7550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 7550 50  0001 C CNN
+F 3 "~" H 1300 7550 50  0001 C CNN
+	1    1300 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR057
+U 1 1 5B8F18D6
+P 1200 7550
+F 0 "#PWR057" H 1200 7300 50  0001 C CNN
+F 1 "GNDA" H 1205 7377 50  0000 C CNN
+F 2 "" H 1200 7550 50  0001 C CNN
+F 3 "" H 1200 7550 50  0001 C CNN
+	1    1200 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR058
+U 1 1 5B8F1ACB
+P 1400 7550
+F 0 "#PWR058" H 1400 7300 50  0001 C CNN
+F 1 "GND" V 1405 7422 50  0000 R CNN
+F 2 "" H 1400 7550 50  0001 C CNN
+F 3 "" H 1400 7550 50  0001 C CNN
+	1    1400 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD1
+U 1 1 5B8F2BA1
+P 6900 2400
+F 0 "RD1" V 7000 2400 50  0000 C CNN
+F 1 "1M" V 6850 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 2400 50  0001 C CNN
+F 3 "~" H 6900 2400 50  0001 C CNN
+	1    6900 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR019
+U 1 1 5B8F2C5B
+P 7000 2400
+F 0 "#PWR019" H 7000 2250 50  0001 C CNN
+F 1 "+3V3" V 7015 2528 50  0000 L CNN
+F 2 "" H 7000 2400 50  0001 C CNN
+F 3 "" H 7000 2400 50  0001 C CNN
+	1    7000 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 1900 7000 1900
+Connection ~ 7000 1900
+Text Label 2750 1250 0    50   ~ 0
+V_EN
+$Comp
+L ADS1299Wing-rescue:C_Small-Device CT1
+U 1 1 5B852377
+P 2850 1350
+F 0 "CT1" V 3100 1300 50  0000 L CNN
+F 1 "1nF" V 3000 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2850 1350 50  0001 C CNN
+F 3 "~" H 2850 1350 50  0001 C CNN
+	1    2850 1350
+	0    1    1    0   
+$EndComp
+Text Label 1650 2900 1    50   ~ 0
+V_EN
+$Comp
+L ADS1299Wing-rescue:LED_Small-Device D3
+U 1 1 5B8E4019
+P 2450 7550
+F 0 "D3" H 2450 7450 50  0000 C CNN
+F 1 "LED_Small" H 2450 7694 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 2450 7550 50  0001 C CNN
+F 3 "~" V 2450 7550 50  0001 C CNN
+	1    2450 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR059
+U 1 1 5B90595E
+P 2350 7550
+F 0 "#PWR059" H 2350 7400 50  0001 C CNN
+F 1 "+3V3" V 2365 7678 50  0000 L CNN
+F 2 "" H 2350 7550 50  0001 C CNN
+F 3 "" H 2350 7550 50  0001 C CNN
+	1    2350 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD6
+U 1 1 5B912286
+P 2650 7550
+F 0 "RD6" V 2750 7550 50  0000 C CNN
+F 1 "1k" V 2550 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2650 7550 50  0001 C CNN
+F 3 "~" H 2650 7550 50  0001 C CNN
+	1    2650 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR060
+U 1 1 5B912360
+P 2750 7550
+F 0 "#PWR060" H 2750 7300 50  0001 C CNN
+F 1 "GND" V 2755 7422 50  0000 R CNN
+F 2 "" H 2750 7550 50  0001 C CNN
+F 3 "" H 2750 7550 50  0001 C CNN
+	1    2750 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C7
+U 1 1 5B85C85C
+P 4300 4550
+F 0 "C7" H 4392 4596 50  0000 L CNN
+F 1 "0.1uF" H 4392 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 4550 50  0001 C CNN
+F 3 "~" H 4300 4550 50  0001 C CNN
+	1    4300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2000 6550 1900
+Connection ~ 6550 1900
+Wire Wire Line
+	6550 1900 6750 1900
+$Comp
+L ADS1299Wing-rescue:TPD4E1B06DCK-DFKI_EI_ZHOU U1
+U 1 1 5C68EDD0
+P 8850 1000
+F 0 "U1" H 9050 1165 50  0000 C CNN
+F 1 "TPD4E1B06DCK" H 9050 1074 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8900 1050 50  0001 C CNN
+F 3 "" H 8900 1050 50  0001 C CNN
+	1    8850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:TPD4E1B06DCK-DFKI_EI_ZHOU U2
+U 1 1 5C69004A
+P 10250 1000
+F 0 "U2" H 10450 1165 50  0000 C CNN
+F 1 "TPD4E1B06DCK" H 10450 1074 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10300 1050 50  0001 C CNN
+F 3 "" H 10300 1050 50  0001 C CNN
+	1    10250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR07
+U 1 1 5C69F675
+P 8650 1300
+F 0 "#PWR07" H 8650 1050 50  0001 C CNN
+F 1 "GND" V 8655 1172 50  0000 R CNN
+F 2 "" H 8650 1300 50  0001 C CNN
+F 3 "" H 8650 1300 50  0001 C CNN
+	1    8650 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR08
+U 1 1 5C6A0201
+P 10050 1300
+F 0 "#PWR08" H 10050 1050 50  0001 C CNN
+F 1 "GND" V 10055 1172 50  0000 R CNN
+F 2 "" H 10050 1300 50  0001 C CNN
+F 3 "" H 10050 1300 50  0001 C CNN
+	1    10050 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR03
+U 1 1 5C6A0DEC
+P 8650 1100
+F 0 "#PWR03" H 8650 850 50  0001 C CNN
+F 1 "GND" V 8655 972 50  0000 R CNN
+F 2 "" H 8650 1100 50  0001 C CNN
+F 3 "" H 8650 1100 50  0001 C CNN
+	1    8650 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR04
+U 1 1 5C6A2026
+P 8650 1200
+F 0 "#PWR04" H 8650 1050 50  0001 C CNN
+F 1 "+3V3" V 8665 1328 50  0000 L CNN
+F 2 "" H 8650 1200 50  0001 C CNN
+F 3 "" H 8650 1200 50  0001 C CNN
+	1    8650 1200
+	0    -1   -1   0   
+$EndComp
+Text Label 10850 1200 0    50   ~ 0
+DIN
+Text Label 9450 1300 0    50   ~ 0
+START
+Text Label 10050 1100 2    50   ~ 0
+~CS
+Text Label 10050 1200 2    50   ~ 0
+SCLK
+Text Label 10850 1300 0    50   ~ 0
+DOUT
+Text Label 9450 1200 0    50   ~ 0
+~DRDY
+$Comp
+L ADS1299Wing-rescue:+BATT-power #PWR011
+U 1 1 5C8B222C
+P 1200 1450
+F 0 "#PWR011" H 1200 1300 50  0001 C CNN
+F 1 "+BATT" V 1215 1578 50  0000 L CNN
+F 2 "" H 1200 1450 50  0001 C CNN
+F 3 "" H 1200 1450 50  0001 C CNN
+	1    1200 1450
+	0    1    1    0   
+$EndComp
+Text Notes 2150 1800 0    50   ~ 0
+15ms delay to shut down \nupon power drop below 3V
+Wire Wire Line
+	6050 5300 5950 5300
+Connection ~ 6050 5300
+Connection ~ 5950 5300
+Wire Wire Line
+	5950 5300 5850 5300
+Wire Wire Line
+	5150 5300 5250 5300
+Connection ~ 5250 5300
+Wire Wire Line
+	5250 5300 5350 5300
+Connection ~ 5350 5300
+Connection ~ 5450 5300
+Wire Wire Line
+	5450 5300 5550 5300
+Connection ~ 5550 5300
+Wire Wire Line
+	5550 5300 5650 5300
+Text Notes 1350 2200 0    79   ~ 0
+Power Supply 3.3 V\n
+Text Notes 1150 800  0    79   ~ 0
+Switch and voltage detection\n
+Wire Notes Line
+	600  1850 3300 1850
+Wire Notes Line
+	3300 1850 3300 600 
+Wire Notes Line
+	3300 600  600  600 
+Wire Notes Line
+	600  600  600  1850
+Text GLabel 4400 1800 0    50   Input ~ 0
+IN1P
+Text GLabel 4400 2100 0    50   Input ~ 0
+IN2P
+Text GLabel 4400 2400 0    50   Input ~ 0
+IN3P
+Text GLabel 4400 2700 0    50   Input ~ 0
+IN4P
+Text GLabel 4400 3000 0    50   Input ~ 0
+IN5P
+Text GLabel 4400 3300 0    50   Input ~ 0
+IN6P
+Text GLabel 4400 3600 0    50   Input ~ 0
+IN7P
+Text GLabel 4400 3900 0    50   Input ~ 0
+IN8P
+Wire Wire Line
+	4300 4450 4700 4450
+Wire Wire Line
+	3900 4450 4300 4450
+Connection ~ 4300 4450
+Wire Wire Line
+	3900 4650 4300 4650
+Connection ~ 4300 4650
+Wire Wire Line
+	4300 4650 4700 4650
+Text GLabel 4400 4200 0    50   Input ~ 0
+SRB1
+$Comp
+L ADS1299Wing-rescue:MCP1754T-3302E_OT U5
+U 1 1 602B436B
+P 2050 2600
+F 0 "U5" H 1850 2850 50  0000 C CNN
+F 1 "MCP1754T-3302E_OT" H 2150 2350 50  0000 C CNN
+F 2 "ADS1299-Lib:SOT95P280X145-5N" H 2400 2600 50  0001 C CNN
+F 3 "" H 1750 2800 50  0001 C CNN
+	1    2050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+BATT-power #PWR05
+U 1 1 602B5A98
+P 2000 1250
+F 0 "#PWR05" H 2000 1100 50  0001 C CNN
+F 1 "+BATT" V 2015 1378 50  0000 L CNN
+F 2 "" H 2000 1250 50  0001 C CNN
+F 3 "" H 2000 1250 50  0001 C CNN
+	1    2000 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+BATT-power #PWR020
+U 1 1 602BC03A
+P 1050 2500
+F 0 "#PWR020" H 1050 2350 50  0001 C CNN
+F 1 "+BATT" V 1065 2628 50  0000 L CNN
+F 2 "" H 1050 2500 50  0001 C CNN
+F 3 "" H 1050 2500 50  0001 C CNN
+	1    1050 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C1
+U 1 1 602C7854
+P 1150 2650
+F 0 "C1" H 1242 2696 50  0000 L CNN
+F 1 "2.2uF" H 1242 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1150 2650 50  0001 C CNN
+F 3 "~" H 1150 2650 50  0001 C CNN
+	1    1150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2500 1150 2500
+Wire Wire Line
+	1150 2500 1150 2550
+Connection ~ 1150 2500
+Wire Wire Line
+	1150 2500 1650 2500
+Wire Wire Line
+	1150 2950 1150 2750
+Wire Wire Line
+	1650 2600 1500 2600
+Wire Wire Line
+	1500 2600 1500 2950
+Connection ~ 1500 2950
+Wire Wire Line
+	1500 2950 1150 2950
+Wire Wire Line
+	1650 2700 1650 2900
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C2
+U 1 1 602F50FA
+P 2600 2650
+F 0 "C2" H 2692 2696 50  0000 L CNN
+F 1 "2.2uF" H 2692 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2600 2650 50  0001 C CNN
+F 3 "~" H 2600 2650 50  0001 C CNN
+	1    2600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2500 2600 2500
+Wire Wire Line
+	2600 2500 2600 2550
+Wire Wire Line
+	2600 2750 2600 2950
+Wire Wire Line
+	2600 2500 2800 2500
+Connection ~ 2600 2500
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR021
+U 1 1 60308648
+P 2800 2500
+F 0 "#PWR021" H 2800 2350 50  0001 C CNN
+F 1 "+3V3" V 2815 2628 50  0000 L CNN
+F 2 "" H 2800 2500 50  0001 C CNN
+F 3 "" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:BD5332G U3
+U 1 1 60357F14
+P 2100 1150
+F 0 "U3" H 2150 1200 50  0000 C CNN
+F 1 "BD5330G" H 2500 800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2050 1100 50  0001 C CNN
+F 3 "" H 2150 1200 50  0001 C CNN
+	1    2100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:TCM828 U6
+U 1 1 6035B746
+P 1900 3900
+F 0 "U6" H 1650 4200 50  0000 C CNN
+F 1 "TCM828" H 2050 3600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1900 3900 50  0001 C CNN
+F 3 "" H 1900 3900 50  0001 C CNN
+	1    1900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C3
+U 1 1 6035BD4B
+P 1200 3850
+F 0 "C3" H 1292 3896 50  0000 L CNN
+F 1 "10uF" H 1292 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 3850 50  0001 C CNN
+F 3 "~" H 1200 3850 50  0001 C CNN
+	1    1200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3750 1200 3750
+Wire Wire Line
+	1500 3900 1500 3950
+Wire Wire Line
+	1500 3950 1200 3950
+Wire Wire Line
+	1500 4250 1500 4050
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C4
+U 1 1 60374C45
+P 2400 4100
+F 0 "C4" H 2492 4146 50  0000 L CNN
+F 1 "10uF" H 2492 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2400 4100 50  0001 C CNN
+F 3 "~" H 2400 4100 50  0001 C CNN
+	1    2400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4000 2400 4000
+Wire Wire Line
+	2400 4200 2400 4250
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR033
+U 1 1 60381FA3
+P 2450 3800
+F 0 "#PWR033" H 2450 3650 50  0001 C CNN
+F 1 "+3V3" V 2465 3928 50  0000 L CNN
+F 2 "" H 2450 3800 50  0001 C CNN
+F 3 "" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3800 2300 3800
+Text Notes 1300 3650 0    79   ~ 0
+Voltage Inverter -3.3V\n\n
+$Comp
+L ADS1299Wing-rescue:-3V3-power #PWR034
+U 1 1 603C7CE6
+P 2650 4000
+F 0 "#PWR034" H 2650 4100 50  0001 C CNN
+F 1 "-3V3" V 2665 4128 50  0000 L CNN
+F 2 "" H 2650 4000 50  0001 C CNN
+F 3 "" H 2650 4000 50  0001 C CNN
+	1    2650 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4000 2400 4000
+Connection ~ 2400 4000
+$Comp
+L ADS1299Wing-rescue:TPS72325 U7
+U 1 1 6042B901
+P 1700 5200
+F 0 "U7" H 1450 5450 50  0000 C CNN
+F 1 "TPS72325" H 1900 4950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1700 5200 50  0001 C CNN
+F 3 "" H 1700 5200 50  0001 C CNN
+	1    1700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C13
+U 1 1 6042C93F
+P 900 5300
+F 0 "C13" H 992 5346 50  0000 L CNN
+F 1 "2.2uF" H 992 5255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 5300 50  0001 C CNN
+F 3 "~" H 900 5300 50  0001 C CNN
+	1    900  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C15
+U 1 1 6042D435
+P 2250 5400
+F 0 "C15" H 2342 5446 50  0000 L CNN
+F 1 "0.01uF" H 2342 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 5400 50  0001 C CNN
+F 3 "~" H 2250 5400 50  0001 C CNN
+	1    2250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C14
+U 1 1 6042DB27
+P 2600 5300
+F 0 "C14" H 2692 5346 50  0000 L CNN
+F 1 "2.2uF" H 2692 5255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2600 5300 50  0001 C CNN
+F 3 "~" H 2600 5300 50  0001 C CNN
+	1    2600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C12
+U 1 1 6042DEAE
+P 2950 5250
+F 0 "C12" H 3042 5296 50  0000 L CNN
+F 1 "10uF" H 3042 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 5250 50  0001 C CNN
+F 3 "~" H 2950 5250 50  0001 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5200 1200 5200
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR044
+U 1 1 6043CE2F
+P 1700 5550
+F 0 "#PWR044" H 1700 5300 50  0001 C CNN
+F 1 "GNDA" H 1705 5377 50  0000 C CNN
+F 2 "" H 1700 5550 50  0001 C CNN
+F 3 "" H 1700 5550 50  0001 C CNN
+	1    1700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5550 1700 5500
+Wire Wire Line
+	1700 5500 2250 5500
+Wire Wire Line
+	1700 5500 1250 5500
+Wire Wire Line
+	900  5500 900  5400
+Connection ~ 1700 5500
+Wire Wire Line
+	900  5100 900  5200
+Wire Wire Line
+	1300 5300 1250 5300
+Wire Wire Line
+	1250 5300 1250 5500
+Connection ~ 1250 5500
+Wire Wire Line
+	1250 5500 900  5500
+Wire Wire Line
+	2100 5300 2250 5300
+Wire Wire Line
+	2100 5100 2600 5100
+Wire Wire Line
+	2600 5100 2600 5200
+Wire Wire Line
+	2600 5400 2600 5500
+Wire Wire Line
+	2600 5500 2250 5500
+Connection ~ 2250 5500
+Wire Wire Line
+	2950 5150 2950 5100
+Wire Wire Line
+	2950 5100 2600 5100
+Connection ~ 2600 5100
+Wire Wire Line
+	2600 5500 2950 5500
+Wire Wire Line
+	2950 5500 2950 5350
+Connection ~ 2600 5500
+$Comp
+L ADS1299Wing-rescue:-3V3-power #PWR040
+U 1 1 604AAD70
+P 850 5100
+F 0 "#PWR040" H 850 5200 50  0001 C CNN
+F 1 "-3V3" H 865 5273 50  0000 C CNN
+F 2 "" H 850 5100 50  0001 C CNN
+F 3 "" H 850 5100 50  0001 C CNN
+	1    850  5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5100 850  5100
+Connection ~ 900  5100
+Wire Wire Line
+	2950 5100 3050 5100
+Connection ~ 2950 5100
+$Comp
+L ADS1299Wing-rescue:-2V5-power #PWR041
+U 1 1 604BDF38
+P 3050 5100
+F 0 "#PWR041" H 3050 5200 50  0001 C CNN
+F 1 "-2V5" H 3065 5273 50  0000 C CNN
+F 2 "" H 3050 5100 50  0001 C CNN
+F 3 "" H 3050 5100 50  0001 C CNN
+	1    3050 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 1450 4950 0    79   ~ 0
+-2.5V Regulator\n\n
+$Comp
+L ADS1299Wing-rescue:TLV70025 U8
+U 1 1 604F36A0
+P 1800 6500
+F 0 "U8" H 1550 6750 50  0000 C CNN
+F 1 "TLV70025" H 2000 6250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1800 6500 50  0001 C CNN
+F 3 "" H 1800 6500 50  0001 C CNN
+	1    1800 6500
+	1    0    0    -1  
+$EndComp
+Text Notes 1500 6250 0    79   ~ 0
++2.5V Regulator\n\n
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR046
+U 1 1 604F4012
+P 1000 6400
+F 0 "#PWR046" H 1000 6250 50  0001 C CNN
+F 1 "+3V3" H 900 6550 50  0000 L CNN
+F 2 "" H 1000 6400 50  0001 C CNN
+F 3 "" H 1000 6400 50  0001 C CNN
+	1    1000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6500 1300 6500
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR048
+U 1 1 6050FCA8
+P 1800 6800
+F 0 "#PWR048" H 1800 6550 50  0001 C CNN
+F 1 "GNDA" H 1805 6627 50  0000 C CNN
+F 2 "" H 1800 6800 50  0001 C CNN
+F 3 "" H 1800 6800 50  0001 C CNN
+	1    1800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6800 1400 6800
+Wire Wire Line
+	1400 6800 1400 6600
+Wire Wire Line
+	1050 6500 1050 6400
+Connection ~ 1050 6400
+Wire Wire Line
+	1050 6400 1000 6400
+Wire Wire Line
+	1050 6700 1050 6800
+Wire Wire Line
+	1050 6800 1400 6800
+Connection ~ 1400 6800
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C20
+U 1 1 6052F8E4
+P 2450 6600
+F 0 "C20" H 2542 6646 50  0000 L CNN
+F 1 "2.2uF" H 2542 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 6600 50  0001 C CNN
+F 3 "~" H 2450 6600 50  0001 C CNN
+	1    2450 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C18
+U 1 1 6052F8EA
+P 2800 6550
+F 0 "C18" H 2892 6596 50  0000 L CNN
+F 1 "10uF" H 2892 6505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 6550 50  0001 C CNN
+F 3 "~" H 2800 6550 50  0001 C CNN
+	1    2800 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6400 2450 6500
+Wire Wire Line
+	2450 6700 2450 6800
+Wire Wire Line
+	2800 6450 2800 6400
+Wire Wire Line
+	2800 6400 2450 6400
+Connection ~ 2450 6400
+Wire Wire Line
+	2450 6800 2800 6800
+Wire Wire Line
+	2800 6800 2800 6650
+Connection ~ 2450 6800
+Wire Wire Line
+	2800 6400 2900 6400
+Connection ~ 2800 6400
+Wire Wire Line
+	2200 6400 2450 6400
+Wire Wire Line
+	1800 6800 2450 6800
+Connection ~ 1800 6800
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR047
+U 1 1 6055C7C1
+P 2900 6400
+F 0 "#PWR047" H 2900 6250 50  0001 C CNN
+F 1 "+2V5" H 2915 6573 50  0000 C CNN
+F 2 "" H 2900 6400 50  0001 C CNN
+F 3 "" H 2900 6400 50  0001 C CNN
+	1    2900 6400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	600  3350 3300 3350
+Wire Notes Line
+	3300 3350 3300 4500
+Wire Notes Line
+	3300 4500 600  4500
+Wire Notes Line
+	600  4500 600  3350
+Wire Notes Line
+	3300 4650 3300 5800
+Wire Notes Line
+	3300 5800 600  5800
+Wire Notes Line
+	600  5800 600  4650
+Wire Notes Line
+	600  4650 3300 4650
+Wire Notes Line
+	600  5950 3300 5950
+Wire Notes Line
+	3300 3200 600  3200
+Wire Notes Line
+	600  2000 600  3200
+Wire Notes Line
+	3300 3200 3300 2000
+Wire Notes Line
+	600  2000 3300 2000
+Wire Notes Line
+	600  7050 3300 7050
+Wire Notes Line
+	3300 7050 3300 5950
+Wire Notes Line
+	600  7050 600  5950
+Text GLabel 7300 1900 2    50   Input ~ 0
+Bias
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR01
+U 1 1 606EAA1F
+P 5400 1100
+F 0 "#PWR01" H 5400 950 50  0001 C CNN
+F 1 "+2V5" H 5415 1273 50  0000 C CNN
+F 2 "" H 5400 1100 50  0001 C CNN
+F 3 "" H 5400 1100 50  0001 C CNN
+	1    5400 1100
+	1    0    0    -1  
+$EndComp
+Text Label 6400 2400 0    50   ~ 0
+~PWDN\RST
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR024
+U 1 1 6069C4FB
+P 4700 2800
+F 0 "#PWR024" H 4700 2650 50  0001 C CNN
+F 1 "+2V5" V 4715 2928 50  0000 L CNN
+F 2 "" H 4700 2800 50  0001 C CNN
+F 3 "" H 4700 2800 50  0001 C CNN
+	1    4700 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 3000 4400 3000
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR027
+U 1 1 6069C865
+P 4700 3100
+F 0 "#PWR027" H 4700 2950 50  0001 C CNN
+F 1 "+2V5" V 4715 3228 50  0000 L CNN
+F 2 "" H 4700 3100 50  0001 C CNN
+F 3 "" H 4700 3100 50  0001 C CNN
+	1    4700 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 1900 6550 1900
+Wire Wire Line
+	6400 2000 6550 2000
+Wire Wire Line
+	6750 2100 6400 2100
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR016
+U 1 1 5C54970A
+P 6400 2200
+F 0 "#PWR016" H 6400 1950 50  0001 C CNN
+F 1 "GNDA" V 6400 1950 50  0000 C CNN
+F 2 "" H 6400 2200 50  0001 C CNN
+F 3 "" H 6400 2200 50  0001 C CNN
+	1    6400 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 3300 4400 3300
+Connection ~ 5450 1200
+Wire Wire Line
+	5450 5200 5450 5300
+Wire Wire Line
+	5550 5200 5550 5300
+Connection ~ 5550 1200
+Wire Wire Line
+	6400 4500 6900 4500
+Wire Wire Line
+	5650 1200 5550 1200
+Wire Wire Line
+	5650 5300 5650 5200
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR036
+U 1 1 5B7A2F93
+P 6400 4000
+F 0 "#PWR036" H 6400 3850 50  0001 C CNN
+F 1 "+3V3" V 6415 4128 50  0000 L CNN
+F 2 "" H 6400 4000 50  0001 C CNN
+F 3 "" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 5200 6050 5300
+Wire Wire Line
+	6050 1100 6050 1200
+Connection ~ 6050 1200
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR030
+U 1 1 6069CC8F
+P 4700 3400
+F 0 "#PWR030" H 4700 3250 50  0001 C CNN
+F 1 "+2V5" V 4715 3528 50  0000 L CNN
+F 2 "" H 4700 3400 50  0001 C CNN
+F 3 "" H 4700 3400 50  0001 C CNN
+	1    4700 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 5200 5950 5300
+Wire Wire Line
+	5950 1200 6050 1200
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR026
+U 1 1 5B8F105C
+P 6950 3050
+F 0 "#PWR026" H 6950 2800 50  0001 C CNN
+F 1 "GND" V 6955 2922 50  0000 R CNN
+F 2 "" H 6950 3050 50  0001 C CNN
+F 3 "" H 6950 3050 50  0001 C CNN
+	1    6950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR037
+U 1 1 5B7A2E7E
+P 6400 4100
+F 0 "#PWR037" H 6400 3850 50  0001 C CNN
+F 1 "GND" V 6405 3972 50  0000 R CNN
+F 2 "" H 6400 4100 50  0001 C CNN
+F 3 "" H 6400 4100 50  0001 C CNN
+	1    6400 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 3600 4400 3600
+Wire Wire Line
+	6400 2500 6400 2400
+Connection ~ 6400 2400
+Wire Wire Line
+	6400 2400 6800 2400
+Wire Wire Line
+	5850 5300 5850 5200
+Wire Wire Line
+	5350 5200 5350 5300
+Wire Wire Line
+	6400 4400 7350 4400
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR032
+U 1 1 6069D16D
+P 4700 3700
+F 0 "#PWR032" H 4700 3550 50  0001 C CNN
+F 1 "+2V5" V 4715 3828 50  0000 L CNN
+F 2 "" H 4700 3700 50  0001 C CNN
+F 3 "" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 4300 7600 4300
+Wire Wire Line
+	6400 4600 6600 4600
+Wire Wire Line
+	4700 4600 4700 4650
+Wire Wire Line
+	4700 4450 4700 4500
+Wire Wire Line
+	5250 5200 5250 5300
+Wire Wire Line
+	5350 1200 5400 1200
+Connection ~ 5350 1200
+Wire Wire Line
+	5250 1200 5350 1200
+Connection ~ 5250 1200
+Wire Wire Line
+	5150 5200 5150 5300
+Wire Wire Line
+	4700 3900 4400 3900
+Wire Wire Line
+	5250 1200 5150 1200
+NoConn ~ 4700 4300
+Wire Wire Line
+	4700 4200 4400 4200
+Wire Wire Line
+	4400 1800 4700 1800
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR013
+U 1 1 6069A4DC
+P 4700 1900
+F 0 "#PWR013" H 4700 1750 50  0001 C CNN
+F 1 "+2V5" V 4715 2028 50  0000 L CNN
+F 2 "" H 4700 1900 50  0001 C CNN
+F 3 "" H 4700 1900 50  0001 C CNN
+	1    4700 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 2100 4700 2100
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR015
+U 1 1 6069BC67
+P 4700 2200
+F 0 "#PWR015" H 4700 2050 50  0001 C CNN
+F 1 "+2V5" V 4715 2328 50  0000 L CNN
+F 2 "" H 4700 2200 50  0001 C CNN
+F 3 "" H 4700 2200 50  0001 C CNN
+	1    4700 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 2400 4400 2400
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR022
+U 1 1 6069C116
+P 4700 2500
+F 0 "#PWR022" H 4700 2350 50  0001 C CNN
+F 1 "+2V5" V 4715 2628 50  0000 L CNN
+F 2 "" H 4700 2500 50  0001 C CNN
+F 3 "" H 4700 2500 50  0001 C CNN
+	1    4700 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 2700 4400 2700
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR035
+U 1 1 6069D50E
+P 4700 4000
+F 0 "#PWR035" H 4700 3850 50  0001 C CNN
+F 1 "+2V5" V 4715 4128 50  0000 L CNN
+F 2 "" H 4700 4000 50  0001 C CNN
+F 3 "" H 4700 4000 50  0001 C CNN
+	1    4700 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:ADS1299-DFKI_EI_ZHOU U4
+U 1 1 6027681B
+P 4900 1400
+F 0 "U4" H 4800 -2150 50  0000 C CNN
+F 1 "ADS1299" H 4750 -2250 50  0000 C CNN
+F 2 "ADS1299-Lib:TQFP-64_10x10mm_P0.5mm" H 6150 1550 50  0001 C CNN
+F 3 "" H 6150 1550 50  0001 C CNN
+	1    4900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1200 5550 1200
+Wire Wire Line
+	5400 1100 5400 1200
+Connection ~ 5400 1200
+Wire Wire Line
+	5400 1200 5450 1200
+$Comp
+L ADS1299Wing-rescue:-2V5-power #PWR039
+U 1 1 60766E73
+P 3900 4750
+F 0 "#PWR039" H 3900 4850 50  0001 C CNN
+F 1 "-2V5" H 3915 4923 50  0000 C CNN
+F 2 "" H 3900 4750 50  0001 C CNN
+F 3 "" H 3900 4750 50  0001 C CNN
+	1    3900 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 4750 3900 4650
+Connection ~ 3900 4650
+Wire Wire Line
+	5350 5300 5400 5300
+$Comp
+L ADS1299Wing-rescue:-2V5-power #PWR043
+U 1 1 60771170
+P 4950 5500
+F 0 "#PWR043" H 4950 5600 50  0001 C CNN
+F 1 "-2V5" H 4965 5673 50  0000 C CNN
+F 2 "" H 4950 5500 50  0001 C CNN
+F 3 "" H 4950 5500 50  0001 C CNN
+	1    4950 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 5300
+Wire Wire Line
+	5400 5300 5450 5300
+Text Label 7600 4900 0    50   ~ 0
+_AVSS
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C17
+U 1 1 6077AC62
+P 5600 5750
+F 0 "C17" H 5692 5796 50  0000 L CNN
+F 1 "0.1uF" H 5692 5705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5600 5750 50  0001 C CNN
+F 3 "~" H 5600 5750 50  0001 C CNN
+	1    5600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C16
+U 1 1 6077B2BD
+P 5250 5750
+F 0 "C16" H 5342 5796 50  0000 L CNN
+F 1 "1uF" H 5342 5705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5250 5750 50  0001 C CNN
+F 3 "~" H 5250 5750 50  0001 C CNN
+	1    5250 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5550 5600 5550
+Wire Wire Line
+	5600 5550 5600 5650
+Wire Wire Line
+	5400 5300 5400 5550
+Wire Wire Line
+	5400 5550 5250 5550
+Wire Wire Line
+	5250 5550 5250 5650
+Connection ~ 5400 5550
+Wire Wire Line
+	5250 5850 5250 5950
+Wire Wire Line
+	5250 5950 5400 5950
+Wire Wire Line
+	5400 5950 5600 5950
+Wire Wire Line
+	5600 5950 5600 5850
+Connection ~ 5400 5950
+Text Label 5450 5550 0    50   ~ 0
+_AVSS
+Wire Wire Line
+	7600 4300 7600 4550
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR045
+U 1 1 607C9701
+P 5400 5950
+F 0 "#PWR045" H 5400 5700 50  0001 C CNN
+F 1 "GNDA" H 5405 5777 50  0000 C CNN
+F 2 "" H 5400 5950 50  0001 C CNN
+F 3 "" H 5400 5950 50  0001 C CNN
+	1    5400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5550 4950 5550
+Wire Wire Line
+	4950 5550 4950 5500
+Connection ~ 5250 5550
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR012
+U 1 1 607D357E
+P 6650 1600
+F 0 "#PWR012" H 6650 1350 50  0001 C CNN
+F 1 "GNDA" H 6655 1427 50  0000 C CNN
+F 2 "" H 6650 1600 50  0001 C CNN
+F 3 "" H 6650 1600 50  0001 C CNN
+	1    6650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1600 6400 1600
+Wire Wire Line
+	6400 1600 6400 1800
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD5
+U 1 1 607DDDEC
+P 6600 3000
+F 0 "RD5" V 6550 3150 50  0000 C CNN
+F 1 "10K" V 6550 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 3000 50  0001 C CNN
+F 3 "~" H 6600 3000 50  0001 C CNN
+	1    6600 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD4
+U 1 1 607DF18C
+P 6600 2900
+F 0 "RD4" V 6550 3050 50  0000 C CNN
+F 1 "10K" V 6550 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 2900 50  0001 C CNN
+F 3 "~" H 6600 2900 50  0001 C CNN
+	1    6600 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD3
+U 1 1 607E9963
+P 6600 2800
+F 0 "RD3" V 6550 2950 50  0000 C CNN
+F 1 "10K" V 6550 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 2800 50  0001 C CNN
+F 3 "~" H 6600 2800 50  0001 C CNN
+	1    6600 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2700 6550 2700
+Wire Wire Line
+	6400 2800 6500 2800
+Wire Wire Line
+	6500 2900 6400 2900
+Wire Wire Line
+	6400 3000 6500 3000
+Wire Wire Line
+	6700 3000 6950 3000
+Wire Wire Line
+	6950 3000 6950 3050
+Wire Wire Line
+	6950 3000 6950 2900
+Wire Wire Line
+	6950 2900 6700 2900
+Connection ~ 6950 3000
+Wire Wire Line
+	6950 2900 6950 2800
+Wire Wire Line
+	6950 2800 6700 2800
+Connection ~ 6950 2900
+Wire Wire Line
+	7300 2700 7100 2700
+Wire Wire Line
+	6900 2700 6750 2700
+Text Notes 5100 800  0    79   ~ 0
+ADS1299 Connections\n
+Text Label 6400 3400 0    50   ~ 0
+DIN
+Text Label 6400 3300 0    50   ~ 0
+DOUT
+Wire Notes Line
+	8000 600  8000 6200
+Wire Notes Line
+	8000 6200 3700 6200
+Wire Notes Line
+	3700 6200 3700 600 
+Wire Notes Line
+	3700 600  8000 600 
+Text Notes 10650 750  2    79   ~ 0
+ESD Protection - Digital Pins
+Wire Notes Line
+	8250 600  11150 600 
+Text GLabel 8650 2500 0    50   Input ~ 0
+IN3P_e
+Text GLabel 8650 2600 0    50   Input ~ 0
+IN4P_e
+Text GLabel 8650 2400 0    50   Input ~ 0
+IN2P_e
+Text GLabel 8650 2300 0    50   Input ~ 0
+IN1P_e
+Text GLabel 9150 2300 2    50   Input ~ 0
+IN6P_e
+Text GLabel 9150 2400 2    50   Input ~ 0
+IN7P_e
+Text GLabel 9150 2500 2    50   Input ~ 0
+IN8P_e
+Text GLabel 8650 2200 0    50   Input ~ 0
+SRB1_e
+$Comp
+L ADS1299Wing-rescue:Conn_01x16-Connector_Generic J2
+U 1 1 60A9F43C
+P 9800 2800
+F 0 "J2" H 9950 3100 50  0000 C CNN
+F 1 "Conn_01x16" V 9900 2750 50  0000 C CNN
+F 2 "ADS1299-Lib:1X16_ROUND_MIN" H 9800 2800 50  0001 C CNN
+F 3 "~" H 9800 2800 50  0001 C CNN
+	1    9800 2800
+	-1   0    0    -1  
+$EndComp
+Text Notes 1100 7450 0    79   ~ 0
+GND connections and LED\n\n
+Wire Notes Line
+	600  7700 3300 7700
+Wire Notes Line
+	3300 7700 3300 7150
+Wire Notes Line
+	3300 7150 600  7150
+Wire Notes Line
+	600  7150 600  7700
+Wire Notes Line
+	8250 1500 11150 1500
+Wire Notes Line
+	11150 600  11150 1500
+Wire Notes Line
+	8250 600  8250 1500
+Text Notes 10050 1750 2    79   ~ 0
+Connectors
+Text Notes 9100 1950 2    59   ~ 0
+Electrodes
+Text Notes 10450 1950 2    59   ~ 0
+Arduino
+Wire Wire Line
+	900  5100 1200 5100
+Wire Wire Line
+	1050 6400 1300 6400
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C19
+U 1 1 6051A183
+P 1050 6600
+F 0 "C19" H 1142 6646 50  0000 L CNN
+F 1 "2.2uF" H 1142 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1050 6600 50  0001 C CNN
+F 3 "~" H 1050 6600 50  0001 C CNN
+	1    1050 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:Conn_01x12-Connector_Generic J3
+U 1 1 60BB74DC
+P 10500 2700
+F 0 "J3" H 10650 2950 50  0000 C CNN
+F 1 "Conn_01x12" V 10600 2650 50  0000 C CNN
+F 2 "ADS1299-Lib:1X12_ROUND_MIN" H 10500 2700 50  0001 C CNN
+F 3 "~" H 10500 2700 50  0001 C CNN
+	1    10500 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2200 10700 2200
+NoConn ~ 10700 2300
+NoConn ~ 10700 2400
+NoConn ~ 10700 2500
+NoConn ~ 10700 2600
+NoConn ~ 10700 2700
+NoConn ~ 10700 3200
+NoConn ~ 10700 3300
+NoConn ~ 10000 3600
+NoConn ~ 10000 3500
+NoConn ~ 10000 3200
+NoConn ~ 10000 3100
+Text Notes 6600 3900 0    50   ~ 0
+important for daisy connection
+NoConn ~ 6400 3900
+NoConn ~ 10000 3000
+Text Label 10000 2500 0    50   ~ 0
+DIN
+Text Label 10000 2400 0    50   ~ 0
+DOUT
+NoConn ~ 10000 2100
+NoConn ~ 10000 2200
+NoConn ~ 10000 2300
+Text Label 10000 2900 0    50   ~ 0
+~DRDY
+Text Label 10000 2600 0    50   ~ 0
+SCLK
+Text Label 10000 2700 0    50   ~ 0
+~CS
+Text Label 10000 2800 0    50   ~ 0
+START
+Wire Notes Line
+	8250 1600 11150 1600
+Wire Notes Line
+	11150 1600 11150 4050
+Wire Notes Line
+	11150 4050 8250 4050
+Wire Notes Line
+	8250 4050 8250 1600
+$Comp
+L ADS1299Wing-rescue:+EXT_BATT #PWR06
+U 1 1 60D168B5
+P 800 1300
+F 0 "#PWR06" H 800 1150 50  0001 C CNN
+F 1 "+EXT_BATT" H 815 1473 50  0000 C CNN
+F 2 "" H 800 1300 50  0001 C CNN
+F 3 "" H 800 1300 50  0001 C CNN
+	1    800  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:D_Schottky-Device D1
+U 1 1 60D179CC
+P 950 1450
+F 0 "D1" H 950 1350 50  0000 C CNN
+F 1 "MBR120" H 950 1550 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 950 1450 50  0001 C CNN
+F 3 "~" H 950 1450 50  0001 C CNN
+	1    950  1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	800  1450 800  1300
+$Comp
+L ADS1299Wing-rescue:+EXT_BATT #PWR018
+U 1 1 60D2431B
+P 10850 2200
+F 0 "#PWR018" H 10850 2050 50  0001 C CNN
+F 1 "+EXT_BATT" H 10800 2350 50  0000 C CNN
+F 2 "" H 10850 2200 50  0001 C CNN
+F 3 "" H 10850 2200 50  0001 C CNN
+	1    10850 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 800  1000 0    50   ~ 0
+Supply from Arduino\n
+$Sheet
+S 9100 4650 1150 450 
+U 6028EE94
+F0 "Referential_montage" 50
+F1 "Referential_montage.sch" 50
+$EndSheet
+Text Notes 10750 4400 2    79   ~ 0
+Referential Montage and SD card
+Wire Notes Line
+	3700 7650 6750 7650
+Wire Notes Line
+	3700 6350 6750 6350
+Wire Notes Line
+	3700 6350 3700 7650
+Wire Notes Line
+	6750 6350 6750 7650
+Text Notes 4500 6550 0    79   ~ 0
+Decoupling Capacitors
+Wire Wire Line
+	6250 7300 6400 7300
+Connection ~ 6250 7300
+Wire Wire Line
+	5500 7300 5650 7300
+Connection ~ 5500 7300
+Wire Wire Line
+	5500 6900 5650 6900
+Connection ~ 5500 6900
+Wire Wire Line
+	4750 7300 4900 7300
+Connection ~ 4750 7300
+Wire Wire Line
+	4750 6900 4900 6900
+Connection ~ 4750 6900
+Wire Wire Line
+	6100 7300 6250 7300
+Wire Wire Line
+	4600 7300 4750 7300
+Wire Wire Line
+	5350 7300 5500 7300
+Wire Wire Line
+	5350 6900 5500 6900
+Wire Wire Line
+	4600 6900 4750 6900
+Wire Wire Line
+	6100 7200 6100 7300
+Wire Wire Line
+	6400 7300 6400 7200
+Wire Wire Line
+	6100 6900 6100 7000
+Wire Wire Line
+	6400 6900 6400 7000
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C27
+U 1 1 60954C70
+P 6100 7100
+F 0 "C27" H 6192 7146 50  0000 L CNN
+F 1 "1uF" H 6192 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6100 7100 50  0001 C CNN
+F 3 "~" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C28
+U 1 1 60954C6A
+P 6400 7100
+F 0 "C28" H 6492 7146 50  0000 L CNN
+F 1 "0.1uF" H 6492 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 7100 50  0001 C CNN
+F 3 "~" H 6400 7100 50  0001 C CNN
+	1    6400 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7200 5350 7300
+Wire Wire Line
+	5650 7300 5650 7200
+Wire Wire Line
+	5350 6900 5350 7000
+Wire Wire Line
+	5650 6900 5650 7000
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C25
+U 1 1 6094B773
+P 5350 7100
+F 0 "C25" H 5442 7146 50  0000 L CNN
+F 1 "1uF" H 5442 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 7100 50  0001 C CNN
+F 3 "~" H 5350 7100 50  0001 C CNN
+	1    5350 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C26
+U 1 1 6094B76D
+P 5650 7100
+F 0 "C26" H 5742 7146 50  0000 L CNN
+F 1 "0.1uF" H 5742 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 7100 50  0001 C CNN
+F 3 "~" H 5650 7100 50  0001 C CNN
+	1    5650 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 7200 4600 7300
+Wire Wire Line
+	4900 7300 4900 7200
+Wire Wire Line
+	4600 6900 4600 7000
+Wire Wire Line
+	4900 6900 4900 7000
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C23
+U 1 1 60942A98
+P 4600 7100
+F 0 "C23" H 4692 7146 50  0000 L CNN
+F 1 "1uF" H 4692 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 7100 50  0001 C CNN
+F 3 "~" H 4600 7100 50  0001 C CNN
+	1    4600 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C24
+U 1 1 60942A92
+P 4900 7100
+F 0 "C24" H 4992 7146 50  0000 L CNN
+F 1 "0.1uF" H 4992 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 7100 50  0001 C CNN
+F 3 "~" H 4900 7100 50  0001 C CNN
+	1    4900 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 7300 3900 7300
+Connection ~ 4050 7300
+Wire Wire Line
+	3900 7200 3900 7300
+Wire Wire Line
+	4200 7300 4050 7300
+Wire Wire Line
+	4050 6900 3900 6900
+Connection ~ 4050 6900
+Wire Wire Line
+	4200 6900 4050 6900
+Wire Wire Line
+	4200 7300 4200 7200
+Wire Wire Line
+	3900 6900 3900 7000
+Wire Wire Line
+	4200 6900 4200 7000
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C21
+U 1 1 609039D3
+P 3900 7100
+F 0 "C21" H 3992 7146 50  0000 L CNN
+F 1 "1uF" H 3992 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3900 7100 50  0001 C CNN
+F 3 "~" H 3900 7100 50  0001 C CNN
+	1    3900 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C22
+U 1 1 609039CD
+P 4200 7100
+F 0 "C22" H 4292 7146 50  0000 L CNN
+F 1 "0.1uF" H 4292 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4200 7100 50  0001 C CNN
+F 3 "~" H 4200 7100 50  0001 C CNN
+	1    4200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR056
+U 1 1 60902E59
+P 6250 7300
+F 0 "#PWR056" H 6250 7050 50  0001 C CNN
+F 1 "GNDA" V 6250 7100 50  0000 C CNN
+F 2 "" H 6250 7300 50  0001 C CNN
+F 3 "" H 6250 7300 50  0001 C CNN
+	1    6250 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR055
+U 1 1 60901C5E
+P 5500 7300
+F 0 "#PWR055" H 5500 7050 50  0001 C CNN
+F 1 "GND" V 5505 7172 50  0000 R CNN
+F 2 "" H 5500 7300 50  0001 C CNN
+F 3 "" H 5500 7300 50  0001 C CNN
+	1    5500 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR051
+U 1 1 609017EC
+P 5500 6900
+F 0 "#PWR051" H 5500 6750 50  0001 C CNN
+F 1 "+3V3" H 5450 7050 50  0000 L CNN
+F 2 "" H 5500 6900 50  0001 C CNN
+F 3 "" H 5500 6900 50  0001 C CNN
+	1    5500 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:-2V5-power #PWR054
+U 1 1 60901140
+P 4750 7300
+F 0 "#PWR054" H 4750 7400 50  0001 C CNN
+F 1 "-2V5" H 4765 7473 50  0000 C CNN
+F 2 "" H 4750 7300 50  0001 C CNN
+F 3 "" H 4750 7300 50  0001 C CNN
+	1    4750 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR050
+U 1 1 60901053
+P 4750 6900
+F 0 "#PWR050" H 4750 6750 50  0001 C CNN
+F 1 "+2V5" H 4765 7073 50  0000 C CNN
+F 2 "" H 4750 6900 50  0001 C CNN
+F 3 "" H 4750 6900 50  0001 C CNN
+	1    4750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR053
+U 1 1 608EB4F4
+P 4050 7300
+F 0 "#PWR053" H 4050 7050 50  0001 C CNN
+F 1 "GNDA" V 4050 7100 50  0000 C CNN
+F 2 "" H 4050 7300 50  0001 C CNN
+F 3 "" H 4050 7300 50  0001 C CNN
+	1    4050 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR049
+U 1 1 608EB22E
+P 4050 6900
+F 0 "#PWR049" H 4050 6750 50  0001 C CNN
+F 1 "+2V5" H 4065 7073 50  0000 C CNN
+F 2 "" H 4050 6900 50  0001 C CNN
+F 3 "" H 4050 6900 50  0001 C CNN
+	1    4050 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:M_HOLE2.5 MH1
+U 1 1 60E62F98
+P 9400 5900
+F 0 "MH1" H 9540 5900 50  0000 L CNN
+F 1 "M_HOLE2.5" H 9400 5700 50  0001 C CNN
+F 2 "ADS1299-Lib:MH2.5" H 9400 5900 50  0001 C CNN
+F 3 "" H 9400 5900 50  0001 C CNN
+	1    9400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:M_HOLE2.5 MH2
+U 1 1 60E64138
+P 9850 5900
+F 0 "MH2" H 9990 5900 50  0000 L CNN
+F 1 "M_HOLE2.5" H 9850 5700 50  0001 C CNN
+F 2 "ADS1299-Lib:MH2.5" H 9850 5900 50  0001 C CNN
+F 3 "" H 9850 5900 50  0001 C CNN
+	1    9850 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6900 6250 6900
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR0101
+U 1 1 60EC12CC
+P 6250 6900
+F 0 "#PWR0101" H 6250 6750 50  0001 C CNN
+F 1 "+2V5" H 6265 7073 50  0000 C CNN
+F 2 "" H 6250 6900 50  0001 C CNN
+F 3 "" H 6250 6900 50  0001 C CNN
+	1    6250 6900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 6900
+Wire Wire Line
+	6250 6900 6400 6900
+Text Notes 10100 5650 2    79   ~ 0
+Mounting holes
+Wire Notes Line
+	8250 4200 11150 4200
+Wire Notes Line
+	11150 4200 11150 5300
+Wire Notes Line
+	11150 5300 8250 5300
+Wire Notes Line
+	8250 5300 8250 4200
+Wire Notes Line
+	8250 5450 11150 5450
+Wire Notes Line
+	11150 5450 11150 6200
+Wire Notes Line
+	11150 6200 8250 6200
+Wire Notes Line
+	8250 6200 8250 5450
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR025
+U 1 1 6056883C
+P 1900 2950
+F 0 "#PWR025" H 1900 2700 50  0001 C CNN
+F 1 "GND" H 2000 2800 50  0000 R CNN
+F 2 "" H 1900 2950 50  0001 C CNN
+F 3 "" H 1900 2950 50  0001 C CNN
+	1    1900 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 2950
+Wire Wire Line
+	1900 2950 1500 2950
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR038
+U 1 1 60568E80
+P 1700 4250
+F 0 "#PWR038" H 1700 4000 50  0001 C CNN
+F 1 "GND" H 1800 4100 50  0000 R CNN
+F 2 "" H 1700 4250 50  0001 C CNN
+F 3 "" H 1700 4250 50  0001 C CNN
+	1    1700 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 4250
+Wire Wire Line
+	1700 4250 1500 4250
+Wire Wire Line
+	1700 4250 2400 4250
+Wire Wire Line
+	1900 2950 2600 2950
+Wire Wire Line
+	1200 1450 1100 1450
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR010
+U 1 1 60582094
+P 2950 1350
+F 0 "#PWR010" H 2950 1100 50  0001 C CNN
+F 1 "GND" V 2955 1222 50  0000 R CNN
+F 2 "" H 2950 1350 50  0001 C CNN
+F 3 "" H 2950 1350 50  0001 C CNN
+	1    2950 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:Conn_02x05_Top_Bottom-Connector_Generic J1
+U 1 1 605B215D
+P 8850 2400
+F 0 "J1" H 8900 2700 50  0000 C CNN
+F 1 "Conn_02x05_Top_Bottom" H 8950 2050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8850 2400 50  0001 C CNN
+F 3 "~" H 8850 2400 50  0001 C CNN
+	1    8850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR0102
+U 1 1 605EDE6B
+P 1950 1350
+F 0 "#PWR0102" H 1950 1100 50  0001 C CNN
+F 1 "GND" V 1955 1222 50  0000 R CNN
+F 2 "" H 1950 1350 50  0001 C CNN
+F 3 "" H 1950 1350 50  0001 C CNN
+	1    1950 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 1350 2000 1350
+Wire Wire Line
+	1200 5200 1200 5100
+Connection ~ 1200 5100
+Wire Wire Line
+	1200 5100 1300 5100
+Wire Wire Line
+	1300 6500 1300 6400
+Connection ~ 1300 6400
+Wire Wire Line
+	1300 6400 1400 6400
+Text GLabel 9150 2200 2    50   Input ~ 0
+IN5P_e
+Text GLabel 9150 2600 2    50   Input ~ 0
+Bias_e
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR0104
+U 1 1 603F0E57
+P 10000 3300
+F 0 "#PWR0104" H 10000 3050 50  0001 C CNN
+F 1 "GND" V 10005 3172 50  0000 R CNN
+F 2 "" H 10000 3300 50  0001 C CNN
+F 3 "" H 10000 3300 50  0001 C CNN
+	1    10000 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR0105
+U 1 1 6040F566
+P 6400 4850
+F 0 "#PWR0105" H 6400 4600 50  0001 C CNN
+F 1 "GNDA" H 6405 4677 50  0000 C CNN
+F 2 "" H 6400 4850 50  0001 C CNN
+F 3 "" H 6400 4850 50  0001 C CNN
+	1    6400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4700 6400 4850
+NoConn ~ 10000 3400
+$Comp
+L ADS1299Wing-rescue:Conn_01x01-Connector_Generic +2.5V1
+U 1 1 60600271
+P 8850 3300
+F 0 "+2.5V1" H 9050 3300 50  0000 C CNN
+F 1 "Conn_01x01" H 8950 3200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8850 3300 50  0001 C CNN
+F 3 "~" H 8850 3300 50  0001 C CNN
+	1    8850 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:Conn_01x01-Connector_Generic -2.5V1
+U 1 1 60600600
+P 8850 3600
+F 0 "-2.5V1" H 9050 3600 50  0000 C CNN
+F 1 "Conn_01x01" H 8950 3500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8850 3600 50  0001 C CNN
+F 3 "~" H 8850 3600 50  0001 C CNN
+	1    8850 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR09
+U 1 1 60600A2E
+P 9050 3300
+F 0 "#PWR09" H 9050 3150 50  0001 C CNN
+F 1 "+2V5" H 9065 3473 50  0000 C CNN
+F 2 "" H 9050 3300 50  0001 C CNN
+F 3 "" H 9050 3300 50  0001 C CNN
+	1    9050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:-2V5-power #PWR014
+U 1 1 60601856
+P 9050 3600
+F 0 "#PWR014" H 9050 3700 50  0001 C CNN
+F 1 "-2V5" H 9065 3773 50  0000 C CNN
+F 2 "" H 9050 3600 50  0001 C CNN
+F 3 "" H 9050 3600 50  0001 C CNN
+	1    9050 3600
+	0    1    1    0   
+$EndComp
+Text GLabel 10700 2800 2    50   Input ~ 0
+SD_CS
+Text GLabel 10700 2900 2    50   Input ~ 0
+SD_SCLK
+Text GLabel 10700 3000 2    50   Input ~ 0
+MOSI
+Text GLabel 10700 3100 2    50   Input ~ 0
+MISO
+$EndSCHEMATC

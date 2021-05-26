@@ -1,0 +1,537 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ADS1299Wing-rescue:CA064C102K5RACTU C?
+U 1 1 602AB4DA
+P 4300 2850
+AR Path="/602AB4DA" Ref="C?"  Part="1" 
+AR Path="/6028EE94/602AB4DA" Ref="C30"  Part="1" 
+F 0 "C30" V 4247 3078 60  0000 L CNN
+F 1 "CA064C102K5RACTU" V 4353 3078 60  0000 L CNN
+F 2 "ADS1299-Lib:CA064C102K5RACTU" H 4300 1900 60  0001 C CNN
+F 3 "" H 4300 2850 60  0000 C CNN
+	1    4300 2850
+	0    1    1    0   
+$EndComp
+Text GLabel 4700 1750 2    50   Input ~ 0
+IN1P
+Text GLabel 4700 1950 2    50   Input ~ 0
+IN2P
+Text GLabel 4700 2150 2    50   Input ~ 0
+IN3P
+Text GLabel 4700 2350 2    50   Input ~ 0
+IN4P
+Text GLabel 4800 4950 2    50   Input ~ 0
+IN5P
+Text GLabel 4800 4750 2    50   Input ~ 0
+IN6P
+Text GLabel 4800 4550 2    50   Input ~ 0
+IN7P
+Text GLabel 4800 4350 2    50   Input ~ 0
+IN8P
+Text GLabel 4700 3450 2    50   Input ~ 0
+SRB1
+$Comp
+L ADS1299Wing-rescue:CAY16-2201F4LF R2
+U 1 1 602DEDCA
+P 2800 2100
+F 0 "R2" H 2800 2815 50  0000 C CNN
+F 1 "CAY16-2201F4LF" H 2800 2724 50  0000 C CNN
+F 2 "ADS1299-Lib:RESCAF80P320X160X60-8N" H 2800 2100 50  0001 C CNN
+F 3 "" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3450 3700 3250
+Wire Wire Line
+	3900 3450 3900 3250
+Connection ~ 3900 3450
+Wire Wire Line
+	3900 3450 3800 3450
+Wire Wire Line
+	4100 3450 4100 3250
+Connection ~ 4100 3450
+Wire Wire Line
+	4100 3450 4000 3450
+Wire Wire Line
+	4300 3450 4300 3250
+Wire Wire Line
+	4300 3450 4200 3450
+Wire Wire Line
+	4300 3450 4400 3450
+Connection ~ 4300 3450
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR062
+U 1 1 603236CB
+P 9100 1450
+F 0 "#PWR062" H 9100 1200 50  0001 C CNN
+F 1 "GNDA" V 9100 1250 50  0000 C CNN
+F 2 "" H 9100 1450 50  0001 C CNN
+F 3 "" H 9100 1450 50  0001 C CNN
+	1    9100 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:TPD4E1B06DCK-DFKI_EI_ZHOU U9
+U 1 1 60323701
+P 7150 1350
+F 0 "U9" H 7350 1515 50  0000 C CNN
+F 1 "TPD4E1B06DCK" H 7350 1424 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 7200 1400 50  0001 C CNN
+F 3 "" H 7200 1400 50  0001 C CNN
+	1    7150 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 2150 0    50   Input ~ 0
+IN3P_e
+Text GLabel 2250 2350 0    50   Input ~ 0
+IN4P_e
+Text GLabel 2250 1950 0    50   Input ~ 0
+IN2P_e
+Text GLabel 2250 1750 0    50   Input ~ 0
+IN1P_e
+$Comp
+L ADS1299Wing-rescue:CA064C102K5RACTU C?
+U 1 1 60333F2C
+P 4400 3850
+AR Path="/60333F2C" Ref="C?"  Part="1" 
+AR Path="/6028EE94/60333F2C" Ref="C31"  Part="1" 
+F 0 "C31" V 4347 4078 60  0000 L CNN
+F 1 "CA064C102K5RACTU" V 4453 4078 60  0000 L CNN
+F 2 "ADS1299-Lib:CA064C102K5RACTU" H 4400 2900 60  0001 C CNN
+F 3 "" H 4400 3850 60  0000 C CNN
+	1    4400 3850
+	0    1    -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR068
+U 1 1 60334114
+P 6950 1650
+F 0 "#PWR068" H 6950 1400 50  0001 C CNN
+F 1 "GNDA" V 6950 1450 50  0000 C CNN
+F 2 "" H 6950 1650 50  0001 C CNN
+F 3 "" H 6950 1650 50  0001 C CNN
+	1    6950 1650
+	0    1    -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:TPD4E1B06DCK-DFKI_EI_ZHOU U12
+U 1 1 6033411E
+P 9300 1750
+F 0 "U12" H 9500 1915 50  0000 C CNN
+F 1 "TPD4E1B06DCK" H 9500 1824 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 9350 1800 50  0001 C CNN
+F 3 "" H 9350 1800 50  0001 C CNN
+	1    9300 1750
+	1    0    0    1   
+$EndComp
+Text GLabel 2200 4750 0    50   Input ~ 0
+IN6P_e
+Text GLabel 2200 4950 0    50   Input ~ 0
+IN5P_e
+Text GLabel 2200 4550 0    50   Input ~ 0
+IN7P_e
+Text GLabel 2200 4350 0    50   Input ~ 0
+IN8P_e
+Connection ~ 3800 3450
+Wire Wire Line
+	3800 3450 3700 3450
+Connection ~ 4000 3450
+Wire Wire Line
+	4000 3450 3900 3450
+Connection ~ 4200 3450
+Wire Wire Line
+	4200 3450 4100 3450
+Connection ~ 4400 3450
+Wire Wire Line
+	4400 3450 4700 3450
+Text GLabel 2950 5600 2    50   Input ~ 0
+SRB1
+Text GLabel 5300 5600 2    50   Input ~ 0
+Bias
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR065
+U 1 1 6087673C
+P 2450 6100
+F 0 "#PWR065" H 2450 5850 50  0001 C CNN
+F 1 "GNDA" V 2450 5900 50  0000 C CNN
+F 2 "" H 2450 6100 50  0001 C CNN
+F 3 "" H 2450 6100 50  0001 C CNN
+	1    2450 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5600 5300 5600
+$Comp
+L ADS1299Wing-rescue:C_Small-Device C?
+U 1 1 6087EB8F
+P 2450 5900
+AR Path="/6087EB8F" Ref="C?"  Part="1" 
+AR Path="/6028EE94/6087EB8F" Ref="C29"  Part="1" 
+F 0 "C29" H 2542 5946 50  0000 L CNN
+F 1 "1nF" H 2542 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 5900 50  0001 C CNN
+F 3 "~" H 2450 5900 50  0001 C CNN
+	1    2450 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6000 2450 6100
+$Comp
+L ADS1299Wing-rescue:TPD4E1B06DCK-DFKI_EI_ZHOU U10
+U 1 1 6088D559
+P 7150 2100
+F 0 "U10" H 7350 2265 50  0000 C CNN
+F 1 "TPD4E1B06DCK" H 7350 2174 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 7200 2150 50  0001 C CNN
+F 3 "" H 7200 2150 50  0001 C CNN
+	1    7150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR063
+U 1 1 6089C460
+P 6950 2400
+F 0 "#PWR063" H 6950 2150 50  0001 C CNN
+F 1 "GNDA" V 6950 2200 50  0000 C CNN
+F 2 "" H 6950 2400 50  0001 C CNN
+F 3 "" H 6950 2400 50  0001 C CNN
+	1    6950 2400
+	0    1    1    0   
+$EndComp
+Text GLabel 4000 5600 0    50   Input ~ 0
+Bias_e
+Text GLabel 1650 5600 0    50   Input ~ 0
+SRB1_e
+$Comp
+L ADS1299Wing-rescue:-2V5-power #PWR?
+U 1 1 608B52E3
+P 9900 2350
+AR Path="/608B52E3" Ref="#PWR?"  Part="1" 
+AR Path="/6028EE94/608B52E3" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 9900 2450 50  0001 C CNN
+F 1 "-2V5" V 9900 2600 50  0000 C CNN
+F 2 "" H 9900 2350 50  0001 C CNN
+F 3 "" H 9900 2350 50  0001 C CNN
+	1    9900 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:+2V5-power #PWR?
+U 1 1 608D6A17
+P 9100 2250
+AR Path="/608D6A17" Ref="#PWR?"  Part="1" 
+AR Path="/6028EE94/608D6A17" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 9100 2100 50  0001 C CNN
+F 1 "+2V5" V 9100 2450 50  0000 C CNN
+F 2 "" H 9100 2250 50  0001 C CNN
+F 3 "" H 9100 2250 50  0001 C CNN
+	1    9100 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:TPD4E1B06DCK-DFKI_EI_ZHOU U11
+U 1 1 608D9AFF
+P 9300 2150
+F 0 "U11" H 9500 2315 50  0000 C CNN
+F 1 "TPD4E1B06DCK" H 9500 2224 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 9350 2200 50  0001 C CNN
+F 3 "" H 9350 2200 50  0001 C CNN
+	1    9300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR066
+U 1 1 608D9EFD
+P 9100 2450
+F 0 "#PWR066" H 9100 2200 50  0001 C CNN
+F 1 "GNDA" V 9100 2250 50  0000 C CNN
+F 2 "" H 9100 2450 50  0001 C CNN
+F 3 "" H 9100 2450 50  0001 C CNN
+	1    9100 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:GNDA-power #PWR067
+U 1 1 608DA39D
+P 9900 2450
+F 0 "#PWR067" H 9900 2200 50  0001 C CNN
+F 1 "GNDA" V 9900 2250 50  0000 C CNN
+F 2 "" H 9900 2450 50  0001 C CNN
+F 3 "" H 9900 2450 50  0001 C CNN
+	1    9900 2450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7750 2400
+NoConn ~ 9100 2350
+NoConn ~ 7750 2300
+Text Notes 3850 1050 2    79   ~ 0
+Hardware Filters 
+Wire Wire Line
+	2150 5600 2450 5600
+Wire Wire Line
+	2450 5800 2450 5600
+Connection ~ 2450 5600
+Wire Wire Line
+	2450 5600 2950 5600
+Wire Wire Line
+	3300 1750 4300 1750
+Wire Wire Line
+	3300 1950 4100 1950
+Wire Wire Line
+	4100 2450 4100 1950
+Connection ~ 4100 1950
+Wire Wire Line
+	4100 1950 4700 1950
+Wire Wire Line
+	4300 2450 4300 1750
+Connection ~ 4300 1750
+Wire Wire Line
+	4300 1750 4700 1750
+Wire Wire Line
+	3300 2150 3900 2150
+Wire Wire Line
+	3300 2350 3700 2350
+Wire Wire Line
+	3900 2150 3900 2450
+Connection ~ 3900 2150
+Wire Wire Line
+	3900 2150 4700 2150
+Wire Wire Line
+	3700 2350 3700 2450
+Connection ~ 3700 2350
+Wire Wire Line
+	3700 2350 4700 2350
+Wire Wire Line
+	3400 4950 4400 4950
+Wire Wire Line
+	4400 4250 4400 4950
+Connection ~ 4400 4950
+Wire Wire Line
+	4400 4950 4800 4950
+Wire Wire Line
+	3400 4550 4000 4550
+Wire Wire Line
+	3400 4750 4200 4750
+Wire Wire Line
+	3400 4350 3800 4350
+Wire Wire Line
+	4200 4250 4200 4750
+Connection ~ 4200 4750
+Wire Wire Line
+	4200 4750 4800 4750
+Wire Wire Line
+	4000 4250 4000 4550
+Connection ~ 4000 4550
+Wire Wire Line
+	4000 4550 4800 4550
+Wire Wire Line
+	3800 4250 3800 4350
+Connection ~ 3800 4350
+Wire Wire Line
+	3800 4350 4800 4350
+$Comp
+L ADS1299Wing-rescue:CAY16-2201F4LF R3
+U 1 1 603340EF
+P 2900 4600
+F 0 "R3" H 2900 5315 50  0000 C CNN
+F 1 "CAY16-2201F4LF" H 2900 5224 50  0000 C CNN
+F 2 "ADS1299-Lib:RESCAF80P320X160X60-8N" H 2900 4600 50  0001 C CNN
+F 3 "" H 2900 4600 50  0001 C CNN
+	1    2900 4600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2250 1750 2300 1750
+Wire Wire Line
+	2300 1950 2250 1950
+Wire Wire Line
+	2250 2150 2300 2150
+Wire Wire Line
+	2300 2350 2250 2350
+Wire Wire Line
+	2200 4350 2400 4350
+Wire Wire Line
+	2400 4550 2200 4550
+Wire Wire Line
+	2400 4750 2200 4750
+Wire Wire Line
+	2400 4950 2200 4950
+Wire Wire Line
+	4000 5600 4300 5600
+Wire Wire Line
+	1950 5600 1650 5600
+Text GLabel 6700 1550 0    50   Input ~ 0
+SRB1_e
+Wire Wire Line
+	6700 1550 6950 1550
+Text GLabel 7950 1650 2    50   Input ~ 0
+IN3P_e
+Text GLabel 8850 1550 0    50   Input ~ 0
+IN4P_e
+Text GLabel 7950 1550 2    50   Input ~ 0
+IN2P_e
+Text GLabel 6700 1450 0    50   Input ~ 0
+IN1P_e
+Wire Wire Line
+	6950 1450 6700 1450
+Wire Wire Line
+	7750 1550 7950 1550
+Wire Wire Line
+	7950 1650 7750 1650
+Wire Wire Line
+	9100 1650 8850 1650
+Text GLabel 10100 1450 2    50   Input ~ 0
+IN6P_e
+Text GLabel 8850 1650 0    50   Input ~ 0
+IN5P_e
+Text GLabel 10100 1550 2    50   Input ~ 0
+IN7P_e
+Text GLabel 6750 2300 0    50   Input ~ 0
+IN8P_e
+Wire Wire Line
+	8850 1550 9100 1550
+Wire Wire Line
+	10100 1450 9900 1450
+Wire Wire Line
+	10100 1550 9900 1550
+Text GLabel 6750 2200 0    50   Input ~ 0
+Bias_e
+Wire Wire Line
+	6750 2300 6950 2300
+Wire Wire Line
+	6950 2200 6750 2200
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD?
+U 1 1 6082CCD9
+P 4400 5600
+AR Path="/6082CCD9" Ref="RD?"  Part="1" 
+AR Path="/6028EE94/6082CCD9" Ref="R1"  Part="1" 
+F 0 "R1" V 4500 5600 50  0000 C CNN
+F 1 "2.2K" V 4300 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 5600 50  0001 C CNN
+F 3 "~" H 4400 5600 50  0001 C CNN
+	1    4400 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ADS1299Wing-rescue:R_Small-Device RD?
+U 1 1 6082E393
+P 2050 5600
+AR Path="/6082E393" Ref="RD?"  Part="1" 
+AR Path="/6028EE94/6082E393" Ref="R4"  Part="1" 
+F 0 "R4" V 2150 5600 50  0000 C CNN
+F 1 "2.2K" V 1950 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 5600 50  0001 C CNN
+F 3 "~" H 2050 5600 50  0001 C CNN
+	1    2050 5600
+	0    -1   -1   0   
+$EndComp
+Text Notes 8100 1050 0    79   ~ 0
+ESD Protection
+Wire Notes Line
+	5750 850  5750 6600
+Wire Notes Line
+	5750 6600 1000 6600
+Wire Notes Line
+	1000 6600 1000 850 
+Wire Notes Line
+	1000 850  5750 850 
+Wire Notes Line
+	6200 850  10600 850 
+Wire Notes Line
+	10600 850  10600 2650
+Wire Notes Line
+	10600 2650 6200 2650
+Wire Notes Line
+	6200 2650 6200 850 
+$Comp
+L ADS1299Wing-rescue:104031-0811-SamacSys_Parts J7
+U 1 1 60878927
+P 7800 3550
+F 0 "J7" H 8450 3815 50  0000 C CNN
+F 1 "104031-0811" H 8450 3724 50  0000 C CNN
+F 2 "SamacSys_Parts:1040310811" H 8950 3650 50  0001 L CNN
+F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us/1040310811_MEMORY_CARD_SOCKET.pdf" H 8950 3550 50  0001 L CNN
+F 4 "microSD 1.10mm SMT push-pull memory card microSD 1.10mm SMT push-pull memory card" H 8950 3450 50  0001 L CNN "Description"
+F 5 "" H 8950 3350 50  0001 L CNN "Height"
+F 6 "538-104031-0811" H 8950 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Molex/104031-0811?qs=udsGRKD4nA3Tvy7wqky%252BuA%3D%3D" H 8950 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Molex" H 8950 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "104031-0811" H 8950 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3550 9100 3550
+$Comp
+L ADS1299Wing-rescue:+3V3-power #PWR?
+U 1 1 608831B1
+P 7500 3850
+AR Path="/608831B1" Ref="#PWR?"  Part="1" 
+AR Path="/6028EE94/608831B1" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 7500 3700 50  0001 C CNN
+F 1 "+3V3" H 7450 4000 50  0000 L CNN
+F 2 "" H 7500 3850 50  0001 C CNN
+F 3 "" H 7500 3850 50  0001 C CNN
+	1    7500 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 3850 7500 3850
+Wire Wire Line
+	9150 3750 9100 3750
+$Comp
+L ADS1299Wing-rescue:GND-power #PWR?
+U 1 1 6088E7BE
+P 9500 3650
+AR Path="/6088E7BE" Ref="#PWR?"  Part="1" 
+AR Path="/6028EE94/6088E7BE" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 9500 3400 50  0001 C CNN
+F 1 "GND" V 9505 3522 50  0000 R CNN
+F 2 "" H 9500 3650 50  0001 C CNN
+F 3 "" H 9500 3650 50  0001 C CNN
+	1    9500 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 3650 9100 3650
+NoConn ~ 9100 3850
+NoConn ~ 7800 3550
+Wire Wire Line
+	7800 3750 7750 3750
+Text Notes 8200 3100 0    79   ~ 0
+SD CARD \n
+Wire Notes Line
+	10600 2850 10600 4550
+Wire Notes Line
+	10600 4550 6200 4550
+Wire Notes Line
+	6200 4550 6200 2850
+Wire Notes Line
+	6200 2850 10600 2850
+Text GLabel 7750 3650 0    50   Input ~ 0
+SD_CS
+Text GLabel 9150 3550 2    50   Input ~ 0
+SD_SCLK
+Text GLabel 7750 3750 0    50   Input ~ 0
+MOSI
+Text GLabel 9150 3750 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	7800 3650 7750 3650
+$EndSCHEMATC

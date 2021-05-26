@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ADS1299Wing-rescue)(type Legacy)(uri ${KIPRJMOD}/ADS1299Wing-rescue.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri C:/Users/jpipe/OneDrive/Documents/KiCad/SamacSys_Parts.lib)(options "")(descr ""))
+)
