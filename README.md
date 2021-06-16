@@ -30,5 +30,93 @@ Example:
 <p align="center">
     x1060001X
 </p>
+
 This code sets the channel (1) to power-down on (0), gain of 24 (6), normal input (0), remove bias (0), disconnected of SRB2 (0) and connected to SRB1 (1)
 
+2. Leadoff settings
+
+This command requires multiple characters to be recognized. It consists of 3 different settings group together corresponding to the channel to modify and the activation of the Lead off for the channel P and the channel N of the specified channel, respectively. The code starts with lower z and end with capital Z.
+
+Example:
+<p align="center">
+    z111Z
+</p>
+
+This code sets the Leadoff detection for the channel (1) to (1 / activated) for the P channel and to (1 / activated) for the N channel.
+
+3. Sample rate settings
+ 
+This command requires multiple characters to be recognized. It consists of the character ~ followed by the desired sample rate for the board. The options are shown below.
+
+| Command | Sample Rate |
+|---------|-------------|
+| 0       | 16 KHz      |
+| 1       | 8 KHz       |
+| 2       | 4 KHz       |
+| 3       | 2 KHz       |
+| 4       | 1 KHz       |
+| 5       | 500 Hz      |
+| 6       | 250 Hz      |
+
+Example:
+<p align="center">
+    ~6
+</p>
+
+This code sets the sample rate of the board to 250 Hz.
+
+#### Single commands
+
+The single commands to manipulate the Brainwear board as described in the following table.
+
+| Command | Description |
+|---------|-------------|
+| 1       | Deactivate channel 1      |
+| 2       | Deactivate channel 2      |
+| 3       | Deactivate channel 3      |
+| 4       | Deactivate channel 4      |
+| 5       | Deactivate channel 5      |
+| 6       | Deactivate channel 6      |
+| 7       | Deactivate channel 7      |
+| 8       | Deactivate channel 8      |
+| Q       | Activate channel 1        |
+| W       | Activate channel 2        |
+| E       | Activate channel 3        |
+| R       | Activate channel 4        |
+| T       | Activate channel 5        |
+| Y       | Activate channel 6        |
+| U       | Activate channel 7        |
+| I       | Activate channel 8        |
+| p       | Connect channels to DC Test signal      | 
+| 0       | Connect channels to GND Test signal     | 
+| =       | Connect channels to fast 1X Test signal | 
+| -       | Connect channels to slow 1X signal      | 
+| ]       | Connect channels to fast 2X Test signal | 
+| \[      | Connect channels to slow 2X Test signal | 
+| n       | Connect channels to normal input        | 
+| d       | Set all channels to default settings      |
+| D       | Report the default settings        |
+| C       | Report number of channels in board      |
+| t       | Activate serial stream of data       |
+| y       | Deactivate serial stream of data       |
+| b       | Start streaming data       |
+| s       | Stop streaming data         |
+| ?       | Show the register settings of the ADS1299 board       |
+| v       | Soft reset of the board        |
+| V       | Get firmware version        |
+| l       | Turn on LED on the Brainwear board      |
+| k       | Turn off LED on the Brainwear board      |
+| a       | Activate recording with the SD card      |
+| r       | Reset file counter for the SD files      |
+| j       | Close SD file      |
+| A       | Record 1 minute of activity in the SD      |
+| S       | Record 5 minutes of activity in the SD       |
+| F       | Record 15 minutes of activity in the SD      |
+| G       | Record 30 minutes of activity in the SD         |
+| H       | Record 1 hour of activity in the SD        |
+| J       | Record 2 hours of activity in the SD        |
+| K       | Record 4 hours of activity in the SD         |
+| <       | Set transmission to RAW mode (compatible with OpenBCI)        |
+| >       | Set transmission to ASCII mode (compatible with Arduino plotter)        |
+| M       | Activate multimode (EEG + MMG)       |
+| N       | Deactivate multimode  (Only EEG is active)       |
