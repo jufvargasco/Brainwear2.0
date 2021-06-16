@@ -12,3 +12,23 @@ The feather board powers the Brainwear board. Then, a voltage detection IC (BD53
 Additionally, an LED (GPIO4) was added to provide an easy way to test the SPI communication between the main board and the Brainwear module. Hardware filters were included following the references provided by Texas Instruments and OpenBCI. Finally, an SD module was integrated into the board in order to record EEG data when required. It is essential to mention that the ADS1299 and the SD card do not share the same SPI bus. Hence, the ADS1299 is connected to the predetermined SPI pins of the feather board, while the SD card requires configuring the board's upper pins to act as an SPI bus.
 
 ![](Images/Block_diagram.png)
+
+The KiCAD files with the PCB of the Brainwear board are in the folder Design Files
+
+## Firmware description
+The firmware shows an application example in the file Brainwear_test.ino. The program contains two different types of classes: the first one is used for instantiating the Brainwear board while the second allows to add the Mechanomyography sensors whose signals are acquired with the TI-ADS1015. The first class packages all the functionalities available in the Brainwear hardware, i.e. testing signals, register, channel, and sample rate configuration, among others. This code is based on the OpenBCI firmware for the Cyton board. On the other hand, the second class allows to instantiate one board of the ADS1015 according to the required sample rate and gain. It also includes functionalities to send data to the main board according to the type of transmissions.
+
+The system receives commands via the serial port that allow to configure the way the board behaves. A description of the commands is given below. Further information about the commands can be found in the file Brainwear_definitions.h
+
+### Commands
+#### Multichar commands
+1. Channel settings
+
+This command requires multiple characters to be recognized. It consists of seven different settings group together corresponding to the channel to modify, power-down, gain, type of input, bias generation, connection to SRB2, connection to SRB1, respectively. The code starts with lower x and end with capital X.
+
+Example:
+<p align="center">
+    x1060001X
+</p>
+This code sets the channel (1) to power-down on (0), gain of 24 (6), normal input (0), remove bias (0), disconnected of SRB2 (0) and connected to SRB1 (1)
+
