@@ -77,3 +77,221 @@ D15   --> D136
 D16   --> D137
 D17   --> D138
 -----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-B_Mask.gbs' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-B_Paste.gbp' ----   Wed Jun 16 16:36:17 2021
+
+D16   --> D103
+D17   --> D104
+D18   --> D105
+D19   --> D106
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-B_SilkS.gbo' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D107
+D11   --> D108
+D12   --> D109
+D13   --> D110
+D14   --> D111
+D15   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-Edge_Cuts.gm1' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D113
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_Cu.gtl' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D114
+D11   --> D115
+D12   --> D116
+D13   --> D117
+D14   --> D118
+D15   --> D119
+D16   --> D120
+D17   --> D121
+D18   --> D122
+D19   --> D123
+D20   --> D124
+D21   --> D125
+D22   --> D126
+D23   --> D127
+D24   --> D128
+D25   --> D129
+D26   --> D130
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_Mask.gts' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D131
+D11   --> D132
+D12   --> D133
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_Paste.gtp' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D134
+D11   --> D135
+D12   --> D136
+D13   --> D137
+D14   --> D138
+D15   --> D139
+D16   --> D140
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_SilkS.gto' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D141
+D11   --> D30
+D12   --> D142
+D13   --> D143
+D14   --> D144
+D15   --> D145
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-In1_Cu.g2' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D146
+D11   --> D147
+D12   --> D148
+D13   --> D149
+D14   --> D150
+D15   --> D151
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-In2_Cu.g3' ----   Wed Jun 16 16:36:17 2021
+
+D10   --> D152
+D11   --> D153
+D12   --> D154
+D13   --> D155
+D14   --> D156
+D15   --> D157
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-B_Mask.gbs' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-B_Paste.gbp' ----   Wed Jun 16 16:40:07 2021
+
+D16   --> D103
+D17   --> D104
+D18   --> D105
+D19   --> D106
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-B_SilkS.gbo' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D107
+D11   --> D108
+D12   --> D109
+D13   --> D110
+D14   --> D111
+D15   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-Edge_Cuts.gm1' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D113
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_Cu.gtl' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D114
+D11   --> D115
+D12   --> D116
+D13   --> D117
+D14   --> D118
+D15   --> D119
+D16   --> D120
+D17   --> D121
+D18   --> D122
+D19   --> D123
+D20   --> D124
+D21   --> D125
+D22   --> D126
+D23   --> D127
+D24   --> D128
+D25   --> D129
+D26   --> D130
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_Mask.gts' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D131
+D11   --> D132
+D12   --> D133
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_Paste.gtp' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D134
+D11   --> D135
+D12   --> D136
+D13   --> D137
+D14   --> D138
+D15   --> D139
+D16   --> D140
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-F_SilkS.gto' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D141
+D11   --> D30
+D12   --> D142
+D13   --> D143
+D14   --> D144
+D15   --> D145
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-In1_Cu.g2' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D146
+D11   --> D147
+D12   --> D148
+D13   --> D149
+D14   --> D150
+D15   --> D151
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\jpipe\Google Drive\DFKI\EEG\Paper\git\Brainwear2.0\Design files\Gerber\ADS1299Wing-In2_Cu.g3' ----   Wed Jun 16 16:40:07 2021
+
+D10   --> D152
+D11   --> D153
+D12   --> D154
+D13   --> D155
+D14   --> D156
+D15   --> D157
+-----------------------------------------------------------------
